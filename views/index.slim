@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta charset="UTF-8"
+    title くじ
+  body
+    form action="/result" method="post"
+      ul
+        li
+          | 選択肢 1:
+          input type="text" name="items[]" value="" size="40"
+        li
+          | 選択肢 2:
+          input type="text" name="items[]" value="" size="40"
+      input type="submit"
