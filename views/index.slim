@@ -4,12 +4,16 @@ html
     meta charset="UTF-8"
     title くじ
   body
-    form action="/result" method="post"
+    p style="font-size: 28px; text-align: center"
+      = @quote
+
+    form action="/result" method="post" style="text-align: center"
       ul
-        li
-          | 選択肢 1:
-          input type="text" name="items[]" value="" size="40"
-        li
-          | 選択肢 2:
-          input type="text" name="items[]" value="" size="40"
+        li style="list-style-type: none"
+          | 選択肢1 
+          input type="text" name="items[]" value="" size="60"
+        li style="list-style-type: none"
+          | 選択肢2 
+          input type="text" name="items[]" value="" size="60"
       input type="submit" value="てきとーに選ぶ"
+
